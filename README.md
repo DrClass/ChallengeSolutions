@@ -1,6 +1,6 @@
-# Euler-Solutions
+# Challenge Solutions
 
-A collection of Java solutions for [Project Euler](https://projecteuler.net/) problems, written using a flexible and extensible problem-solving framework.
+A collection of Java solutions for [Project Euler](https://projecteuler.net/) problems, [Rosalind](https://rosalind.info/) problems, and in the future maybe others. Written using a flexible and extensible problem-solving framework.
 
 ## Usage
 
@@ -19,13 +19,14 @@ The project can be run by either passing arguments directly or without passing a
 Solve a problem
 
 ```bash
-./gradlew run --args="solve <number>"
+./gradlew run --args="solve <source> <id>"
 ```
 
 Example:
 
 ```bash
-./gradlew run --args="solve 1"
+./gradlew run --args="solve euler 1"
+./gradlew run --args="solve rosalind dna"
 ```
 
 List all available problems
@@ -45,7 +46,8 @@ If you run without arguments, the program will start an interactive prompt:
 You can then type commands like:
 
 ```bash
-solve 1
+solve euler 1
+solve rosalind dna
 list
 exit
 ```
